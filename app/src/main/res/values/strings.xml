@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SearchPlacesUsingGoogleMap</string>
+    <string name="title_activity_maps">Map</string>
+
+    <!-- Places detail activity -->
+    <string name="tv_place_name">Place Name</string>
+    <string name="tv_place_details">Place Details Here</string>
+    <string name="tv_place_type">Place Type</string>
+    <string name="tv_place_address">Place Address</string>
+    <string name="tv_near_places">Near Places</string>
+</resources>

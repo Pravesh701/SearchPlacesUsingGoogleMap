@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_search_place"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/sv_search_place"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:imeOptions="actionGo"
+            android:queryHint="Search by Name or Number"
+            android:background="@drawable/ic_gradient_search_bar"
+            android:iconifiedByDefault="false"
+            android:focusable="false"
+            app:iconifiedByDefault="false"
+            android:focusableInTouchMode="true"/>
+
+        <ImageButton
+            android:id="@+id/img_btn_search_place"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/ic_search_button"
+            android:background="@drawable/ic_gradient_search_bar"
+            tools:ignore="ContentDescription" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_show_search_places"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/ll_search_place" />
+
+</RelativeLayout>
